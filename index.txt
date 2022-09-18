@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<HTML>
+    <STYLE>
+      div{ display: inline; font-size: 26px;}
+    </STYLE>
+    
+    <BODY>
+        <div>Search for movie by title:</div>
+         <input id="searchTitle" type="text"> 
+         <button id="get_api_res_btn">Get Film Info</button>
+         <br>
+         <p>
+         <div id="api_result1"></div>
+         
+        <script src="app.js"></script>
+ 
+    </BODY>
+</HTML>
