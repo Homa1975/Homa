@@ -1,30 +1,41 @@
 public class StringCompare {
 
-        public static boolean compareStr() {
+    public static boolean compareStr() {
 
-            String s1 = "Not enough time";
-            int len1 = s1.length();
-            String s2 = "I study at night because I work during the day";
-            int len2 = s2.length();
+        String s1 = "Not enough time ";
+        int len1 = s1.length();
+        String s2 = "I study at night";
+        int len2 = s2.length();
 
-            System.out.println( "Line length \"Not enough time\": " + len1 + " symbols.");
-            System.out.println( "Line length \"I study at night because I work during the day\": " + len2 + " symbols.");
+        System.out.println( "Line length \"Not enough time \": " + len1 + " symbols.");
+        System.out.println( "Line length \"I study at night\": " + len2 + " symbols.");
 
 
-            if (len1 > len2){
-                return true;
-            }
-            else {
-                return false;
-            }
+        if (len1 > len2){
+            return true;
 
-      }
-
-    public static void main(String[] args) {
-            System.out.println(compareStr());
-
+        }
+        if (len1 < len2){
+            return false;
+        }
+        else {
+            System.out.println( "Strings are equal.");
+        }
+        return false;
     }
 
-Line length "Not enough time": 15 symbols.
-Line length "I study at night because I work during the day": 46 symbols.
+    public static void main(String[] args) {
+        System.out.println(compareStr());
+
+    }
+}
+
+
+
+
+Line length "Not enough time ": 16 symbols.
+Line length "I study at night": 16 symbols.
+Strings are equal.
 false
+
+Process finished with exit code 0
